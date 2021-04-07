@@ -18,13 +18,42 @@ body {
   height: 220px;
   width: 200px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 1px solid wheat;
 }
 .intro-heading {
   font-size: 18px;
   font-weight: 600;
   color: white;
 }
+
 .intro-subheading {
   color: white;
+}
+
+.drop-animation {
+  animation: drop 0.8s linear;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-20px);
+  }
+  33% {
+    transform: translateY(-10px);
+  }
+  67% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.mt {
+  margin-top: 6px;
+}
+.mt-sm {
+  margin-top: 4px;
+}
+.mt-lg {
+  margin-top: 8px;
 }
